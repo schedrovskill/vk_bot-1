@@ -1,7 +1,7 @@
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 key = "c6bfd599e93b11b43f2a46aa9bdb17ed8502b191f5d4ef733fe389e597608ca4937a3cfe0ebdd47625474"
-# Авторизуемся как сообщество
+# Авторизуемся как сообщество  банан
 vk = vk_api.VkApi(token=key)
 
 def send_message(user_id, message):
