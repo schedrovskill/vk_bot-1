@@ -1,6 +1,6 @@
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
-key = ""
+key = "c6bfd599e93b11b43f2a46aa9bdb17ed8502b191f5d4ef733fe389e597608ca4937a3cfe0ebdd47625474"
 # Авторизуемся как сообщество
 vk = vk_api.VkApi(token=key)
 
@@ -22,5 +22,7 @@ for event in longpoll.listen():
         if event.to_me:
             text = event.text.lower()
             user_id = event.user_id
-            print(text)
+            if "привет" in text:
+              send_message(user_id, "привет")
+              print(text)
             
